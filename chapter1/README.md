@@ -88,8 +88,45 @@
 3. 资源共享
 （2、3的区别？）
 
+### 并行处理计算机根据结构分类
+1. 流水线计算机（时间重复）
+2. 阵列处理机（资源重复）
+3. 多处理机（资源共享。又分为紧耦合和松耦合两类）
+4. 数据流计算机
+
+### 多机系统的耦合度
+多级系统是多台处理机组合形成的单一计算机系统，耦合度用来衡量不同处理机联系的紧密程度。
+* 松散耦合：通过网络等通信线路连接
+* 紧密耦合：通过系统总线连接
+
+### Flynn 分类法 (对计算机系统进行分类)
+* SISD - Single instruction, single data (流水线计算机，冯.诺依曼机)
+* SIMD - Multiple instruction, single data (这种比较少见)
+* MISD - Single instruction, multiple data (向量机，阵列机)
+* MIMD - Multiple instruction, multiple data (多处理机，多机系统)
+
+David J.Kuck和冯泽云也分别提出了其他的分类方法，（见P83，P84）  
+P85有对上述分类的图形描述。
+
+
+1.4 性能评估指标
+---------------------------------------------------
+
+### 基本参数
+* [CPI](http://en.wikipedia.org/wiki/Cycles_per_instruction) - Cycles per instruction
+* [IPS](http://en.wikipedia.org/wiki/Instructions_per_second) - Instructions per second (or MIPS, million instructions per second)
+* [FLOPS](http://en.wikipedia.org/wiki/FLOPS) - FLoating-point Operations Per Second
+
+### 加速比性能定律 / 定量设计原理 (为何这么叫？)
+1. Amdahl 原理 - 增加处理机性能改善有极限，加速比降低
+2. Gustafson 定律
+3. Sun Ni 定律
+这部分pdf没讲清楚，看教科书。uwhpc讲了Amdahl原理。
+
 
 进度
 -----------------------
 2014年 05月 28日 星期三 19:47:50 HKT
 看到p73
+2014年 05月 28日 星期三 23:49:09 HKT
+Done
